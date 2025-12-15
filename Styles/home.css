@@ -1,0 +1,17 @@
+h1 {
+    font-size: 40px;
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-size: 28px;
+    color: rgb(83, 205, 170);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#soul-para {
+    font-size: 22px;
+    color: #1d1d1d;
+    font-family: 'Times New Roman', Times, serif;
+}

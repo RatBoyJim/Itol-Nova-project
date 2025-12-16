@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Fonts/Roboto/Roboto-Regular.ttf">
         <title>Nova</title>
         <!-- The below is an example of external css styling -->
         <link rel="stylesheet" href="Styles/home.css">
@@ -15,28 +16,32 @@
         </style> -->
     </head>
     <body>
-        <img src="Images/hero-image.jpg" alt="A shillouette of a young lady" id="hero-image"/>
+        <!-- <img src="Images/hero-image.jpg" alt="A shillouette of a young lady" id="hero-image"/> -->
         <!-- The below is an exaple of inline css styling -->
         <!-- <h1 style="font-size: 40px;">NOVA</h1> -->
-        <section id="top-section"> 
-            <h1>NOVA</h1>
-            <ul>
-                <li><a href="home.html" class="nav-link">Home</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="work.html" class="nav-link">Services</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </section>
-        <section>   
-            <a href="http://www.google.com" class="about-link">WORK WITH NOVA</a>
-            <p>Designs by Nova</p>
-            <p>Nova's portfolio website is an expression of her capabilities to innovate through design.
-                Just as her creations know no bounds, her designs embrace the same spirit. Elegant,
-                beautiful and functional.
-            </p>
-            <!-- The below should be separate from the main paragraph -->
-            <p id="soul-para"> - this describes the soul of anything made by Nova."</p>
-        </section>
+        <div id="master-div">
+            <section> 
+                <nav>
+                    <h1>NOVA</h1>
+                    <ul>
+                        <li><a href="home.html" class="nav-link">Home</a></li>
+                        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li><a href="work.html" class="nav-link">Services</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <div id="description">   
+                <a href="http://www.google.com" class="about-link">WORK WITH NOVA</a>
+                <p>Designs by Nova</p>
+                <p>Nova's portfolio website is an expression of her capabilities to innovate through design.
+                    Just as her creations know no bounds, her designs embrace the same spirit. Elegant,
+                    beautiful and functional.
+                </p>
+                <!-- The below should be separate from the main paragraph -->
+                <p id="soul-para"> - this describes the soul of anything made by Nova."</p>
+            </div>
+        </div>
     </body>
 </html>

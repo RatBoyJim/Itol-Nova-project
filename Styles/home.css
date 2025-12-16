@@ -1,31 +1,84 @@
-#top-section {
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Users/michaelanderson/Desktop/Nova/Fonts/Roboto/Roboto-Regular.ttf');
+}
+
+body {
+    background-image: url('/Users/michaelanderson/Desktop/Nova/Images/hero-image.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+#master-div {
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
-    font-size: 40px;
-    color: blueviolet;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: white;
 }
 
-ul {
+/* NAVIGATION STYLES */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    z-index: 1000;
+}
+
+nav ul {
     list-style-type: none;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
 }
 
-a {
+nav li {
+    margin: 0;
+}
+
+nav a {
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    transition: color 0.3s, border-bottom 0.3s;
+    position: relative;
+}
+
+nav a:hover {
+    color:#4a92a3;
+    border-bottom: 2px solid #4a92a3;
+}
+
+/* DESCRIPTION SECTION */
+
+#description {
+    position: relative;
 }
 
 p {
     font-size: 28px;
-    color: rgb(83, 205, 170);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 #soul-para {
     font-size: 22px;
-    color: #1d1d1d;
-    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }

@@ -22,6 +22,7 @@ body {
 #master-div {
     display: flex;
     flex-direction: column;
+    margin-left: 32px;
 }
 
 h1 {
@@ -40,6 +41,7 @@ nav {
     width: 100%;
     padding: 10px 0px;
     z-index: 1000;
+    cursor: pointer;
 }
 
 nav ul {
@@ -53,15 +55,12 @@ nav ul {
     margin-left: auto;
 }
 
-nav li {
-    margin: 0;
-}
-
 nav a {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Light", sans-serif;
     transition: color 0.3s, border-bottom 0.3s;
     position: relative;
+    color: #e6e6e6;
 }
 
 nav a:hover {
@@ -69,9 +68,54 @@ nav a:hover {
     border-bottom: 2px solid #4a92a3;
 }
 
+nav a:visited {
+    color: #e6e6e6;
+}
+
+.nav-link {
+    border: 1px solid white;
+    background-color: rgb(69, 65, 65);
+    height: 40px;
+    width: 105px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* DESCRIPTION SECTION */
 
-#description {
+#description-container {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 300px; */
+    margin-top: 20%;
+    margin-left: 18px;
+}
+
+#work-with-nova-button {
+    background-color: #e6e6e6;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 260px;
+}
+
+#work-with-nova-link {
+    text-decoration: none;
+}
+
+#work-with-nova-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#description-container {
     position: relative;
     margin-left: 20px;
     width: 520px;
@@ -80,7 +124,8 @@ nav a:hover {
 #designs-header {
     font-size: 48px;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
+    margin: 35px 0 0 0;
 }
 
 p {

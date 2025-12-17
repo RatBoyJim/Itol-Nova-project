@@ -50,18 +50,30 @@ nav ul {
     margin-left: auto;
 }
 
-nav li {
-    margin: 0;
-}
-
 nav a {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Light", sans-serif;
     transition: color 0.3s, border-bottom 0.3s;
     position: relative;
+    color: #e6e6e6;
 }
 
 nav a:hover {
     color:#4a92a3;
     border-bottom: 2px solid #4a92a3;
+}
+
+nav a:visited {
+    color: #e6e6e6;
+}
+
+.nav-link {
+    border: 1px solid white;
+    background-color: rgb(69, 65, 65);
+    height: 40px;
+    width: 105px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

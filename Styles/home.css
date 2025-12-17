@@ -3,6 +3,11 @@
     src: url('/Users/michaelanderson/Desktop/Nova/Fonts/Roboto/Roboto-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('/Users/michaelanderson/Desktop/Nova/Fonts/Roboto/Roboto-Light.ttf');
+}
+
 body {
     background-image: url('/Users/michaelanderson/Desktop/Nova/Images/hero-image.jpg');
     background-size: cover;
@@ -30,7 +35,6 @@ h1 {
 nav {
     display: flex;
     flex-direction: row;
-    font-size: 20px;
     top: 0;
     left: 0;
     width: 100%;
@@ -69,16 +73,24 @@ nav a:hover {
 
 #description {
     position: relative;
+    margin-left: 20px;
+    width: 520px;
+}
+
+#designs-header {
+    font-size: 48px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
-    font-size: 28px;
+    font-size: 20px;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
 }
 
 #soul-para {
-    font-size: 22px;
+    font-size: 20px;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
 }

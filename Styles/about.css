@@ -87,3 +87,67 @@ nav a:visited {
     justify-content: center;
     align-items: center;
 }
+
+/* ABOUT STYLES */
+#about-container {
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    margin-top: 215px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#about-title-container {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Roboto Light", sans-serif;
+    color: white;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-title-role {
+    font-size: 40px;
+    margin-top: 10px;
+    font-family: "Roboto Light", sans-serif;
+    color: white;
+    line-height: 10px;
+}
+
+#about-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 12px;
+    width: 35%;
+}
+
+#see-work-button-container {
+    margin-top: 30px;
+    display: flex;
+}
+
+#see-work-button {
+    background-color: #e6e6e6;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 260px;
+}
+
+#see-work-link {
+    text-decoration: none;
+}
+
+#see-work-link:visited {
+    text-decoration: none;
+    color: black;
+}

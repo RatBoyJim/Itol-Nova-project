@@ -17,13 +17,15 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 #master-div {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1 {
@@ -72,8 +74,8 @@ nav a {
 }
 
 nav a:hover {
-    color:#4a92a3;
-    border-bottom: 2px solid #4a92a3;
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 nav a:visited {

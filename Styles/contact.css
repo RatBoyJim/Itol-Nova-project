@@ -9,9 +9,14 @@
 }
 
 body {
-    background-color: black;
+    background-image: url('/Users/michaelanderson/Desktop/Nova/Images/contact-page-image.jpg');
+    background-size: cover;
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: darken;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -86,4 +91,100 @@ nav a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* FORM STYLES */
+
+#form-master-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 180px;
+    color: white;
+    font-family: "Roboto Light", sans-serif;
+    width: 70%;
+}
+
+#form-title-container {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#form-title {
+    margin: 0;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(52, 52, 52);
+    padding: 30px 20px 20px 20px;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+.form-input {
+    height: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 12px;
+    border: 1px solid white;
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+
+#submit-button-container {
+    display: flex;
+    margin-left: auto;
+}
+
+#submit-button {
+    background-color: #e6e6e6;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 170px;
+}
+
+#submit-link {
+    text-decoration: none;
+}
+
+#submit-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#form-footer-container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    background-color: white;
+    border-radius: 8px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Light", sans-serif;
+    color: white;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+footer a {
+    margin-right: 5px;
+    text-decoration: none;
+    color: white;
 }

@@ -87,3 +87,79 @@ nav a:visited {
     justify-content: center;
     align-items: center;
 }
+
+/* SERVICES STYLES */
+#services-container {
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    margin-top: 215px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#services-title-container {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Roboto Light", sans-serif;
+    color: white;
+    margin-right: 16px;
+}
+
+#services-list-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-left: auto;
+}
+
+#services-top-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+#services-bottom-container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid white;
+}
+
+.service-item {
+    font-family: "Roboto Light", sans-serif;
+    color: white;
+    width: 300px;
+}
+
+.service-item h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#nova-button-container {
+    margin-top: 30px;
+    display: flex;
+    margin-left: auto;
+}
+
+#work-with-nova-button {
+    background-color: #e6e6e6;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 260px;
+}
+
+#work-with-nova-link {
+    text-decoration: none;
+}
+
+#work-with-nova-link:visited {
+    text-decoration: none;
+    color: black;
+}

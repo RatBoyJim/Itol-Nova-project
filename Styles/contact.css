@@ -15,6 +15,7 @@ body {
     padding: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: darken;
     display: flex;

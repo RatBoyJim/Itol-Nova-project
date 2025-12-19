@@ -184,12 +184,9 @@ nav a:visited {
     display: flex;
     margin-top: 20px;
     margin-left: auto;
-    background-color: white;
-    border-radius: 8px;
-    height: 40px;
 }
 
-footer {
+/* footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,4 +200,4 @@ footer a {
     margin-right: 5px;
     text-decoration: none;
     color: white;
-}
+} */

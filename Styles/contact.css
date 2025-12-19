@@ -158,11 +158,6 @@ nav a:visited {
     color: white;
 }
 
-#submit-button-container {
-    display: flex;
-    margin-left: auto;
-}
-
 #submit-button {
     background-color: #e6e6e6;
     color: black;
@@ -174,6 +169,8 @@ nav a:visited {
     align-items: center;
     height: 40px;
     width: 170px;
+    display: flex;
+    margin-left: auto;
 }
 
 #submit-link {

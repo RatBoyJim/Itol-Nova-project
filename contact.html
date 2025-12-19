@@ -31,20 +31,18 @@
                         <p id="form-title">LET ME TELL YOUR DIGITAL STORIES</p>
                     </div>
                     <div id="form-container">
-                        <form>
+                        <form action="form-handler.php" method="post">
                             <label for="fname" class="form-label">FIRST NAME</label><br>
-                            <input type="text" class="form-input">
+                            <input type="text" id="fname" name="fname" class="form-input">
                             <br>
                             <label for="lname" class="form-label">LAST NAME</label><br>
-                            <input type="text" class="form-input">
+                            <input type="text" id="lname" name="lname" class="form-input">
                             <br>
                             <label for="email" class="form-label">EMAIL ADDRESS</label><br>
-                            <input type="email" class="form-input">
+                            <input type="email" id="email" name="email" class="form-input">
                             <br>
+                            <input type="submit" id="submit-button" value="SUBMIT">
                         </form>
-                        <div id="submit-button-container">
-                            <div id="submit-button"><a href="portfolio.html" id="submit-link">SUBMIT</a></div>
-                        </div>
                     </div>
                     <div id="form-footer-container">
                         <i class="fa-brands fa-square-facebook" style="font-size: 36px; color: #ffffff;"></i>

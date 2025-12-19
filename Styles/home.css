@@ -8,6 +8,11 @@
     src: url('/Users/michaelanderson/Desktop/Nova/Fonts/Roboto/Roboto-Light.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('/Users/michaelanderson/Desktop/Nova/Fonts/Roboto/Roboto-Bold.ttf');
+}
+
 body {
     background-image: url('/Users/michaelanderson/Desktop/Nova/Images/hero-image.jpg');
     background-size: cover;
@@ -30,8 +35,8 @@ body {
 }
 
 h1 {
-    font-size: 30px;
-    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-family: "Roboto Light", sans-serif;
     color: white;
 }
 
@@ -57,7 +62,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -86,7 +91,7 @@ nav a:visited {
 .nav-link {
     border: 1px solid white;
     background-color: rgb(69, 65, 65);
-    height: 40px;
+    height: 36px;
     width: 105px;
     margin-right: 8px;
     display: flex;
@@ -107,7 +112,7 @@ nav a:visited {
 #work-with-nova-button {
     background-color: #e6e6e6;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Bold', sans-serif;
     font-size: 14px;
     cursor: pointer;
     display: flex;

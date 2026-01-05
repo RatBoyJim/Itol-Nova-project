@@ -171,6 +171,13 @@ nav a:visited {
     width: 170px;
     display: flex;
     margin-left: auto;
+    border: none;
+}
+
+#submit-button:hover {
+    background-color: black;
+    color: #e6e6e6;
+    border: 1px solid #e6e6e6;
 }
 
 #submit-link {
@@ -187,6 +194,23 @@ nav a:visited {
     margin-top: 20px;
     margin-left: auto;
 }
+
+input:valid,
+text:valid,
+email:valid {
+    border-color: #28a745;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
 
 /* footer {
     display: flex;

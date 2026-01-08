@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nova - Canvas Example</title>
+        <style>
+            canvas {
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="header-text">Welcome!</h1>
+        <canvas id="my-canvas" width="400" height="200"></canvas>
+        <script>
+            // get the html canvas element
+            const canvas = document.getElementById('my-canvas');
+            // get the 2D drawing context
+            const ctx = canvas.getContext('2d');
+            // Adding an event listener to the canvas
+            canvas.addEventListener('click', function(event) {
+                const x = event.clientX - canvas.offsetLeft;
+                const y = event.clientY - canvas.offsetTop;
+                // Draw a rectangle and fill it with color
+                ctx.fillStyle = 'chartreuse';
+                ctx.fillRect(10, 10, 150, 80);
+                // Draw a circle
+                ctx.beginPath();
+                // Sets the paramaters for the arc (x, y, radius, startAngle, endAngle)
+                ctx.arc(x, y, 40, 0, Math.PI * 2);
+                // creeate a linear gradient
+                const gradient = ctx.createLinearGradient(260, 10, 340, 90);
+                gradient.addColorStop(0, 'blue');
+                gradient.addColorStop(1, '#4af7af');
+                // Fill the circle with the gradient
+                ctx.fillStyle = gradient;
+                ctx.fill();
+                ctx.closePath();
+
+                // Draw some text
+                ctx.fillStyle = 'black';
+                ctx.font = '20px Arial';
+                ctx.fillText('Hello, Canvas!', 20, 50);
+            });
+        </script>
+        <canvas id="my-other-canvas" width="800" height="400"></canvas>
+        <script>
+            // get the html canvas element
+            const otherCanvas = document.getElementById('my-other-canvas');
+            // get the 2D drawing context
+            const ctx2 = otherCanvas.getContext('2d');
+            let isDrawing = false;
+            // Adding an event listener to the canvas
+            otherCanvas.addEventListener('mousedown', function(event) {
+                isDrawing = true;
+                draw(
+                    event.clientX - otherCanvas.offsetLeft,
+                    event.clientY - otherCanvas.offsetTop
+                );
+            });
+            otherCanvas.addEventListener('mousemove', function(event) {
+                if (isDrawing) {
+                    draw(
+                        event.clientX - otherCanvas.offsetLeft,
+                        event.clientY - otherCanvas.offsetTop
+                    );
+                }
+            });
+            otherCanvas.addEventListener('mouseup', function(event) {
+                isDrawing = false;
+            });
+            function draw(x, y) {
+                ctx2.fillStyle = 'purple';
+                ctx2.beginPath();
+                ctx2.arc(x, y, 5, 0, Math.PI * 2);
+                ctx2.fill();
+                ctx2.closePath();
+            }
+        </script>
+        <div>
+            <canvas id="my-third-canvas" width="400" height="200"></canvas>
+            <script>
+                const thirdCanvas = document.getElementById('my-third-canvas');
+                const ctx3 = thirdCanvas.getContext('2d');
+
+                const img = new Image();
+                img.src = '/Users/michaelanderson/Desktop/Nova/Images/gallary2.jpg';
+                img.onload = function() {
+                    ctx3.drawImage(img, 0, 0, thirdCanvas.width, thirdCanvas.height);
+                };
+
+                // Add a click event to spin the image
+                thirdCanvas.addEventListener('click', function () {
+                    ctx3.clearRect(0, 0, thirdCanvas.width, thirdCanvas.height);
+                    const angle = 0;
+                    rotateImage(img, angle);
+                });
+
+                //  function to rotate the image
+                function rotateImage(image, angle) {
+                    ctx3.save();
+                    ctx3.translate(thirdCanvas.width / 2, thirdCanvas.height / 2);
+                    ctx3.rotate((angle * Math.PI) / 180);
+                    ctx3.drawImage(image, -thirdCanvas.width / 2, -thirdCanvas.height / 2, thirdCanvas.width, thirdCanvas.height);
+                    ctx3.restore();
+
+                    // Increment the angle and request the next frame
+                    const newAngle = angle + 10;
+                    if (newAngle < 360) {
+                        setTimeout(function () {
+                            rotateImage(image, newAngle);
+                        }, 100);
+                    }
+                }
+            </script>
+        </div>
+        <div>
+            <canvas id="game-canvas" width="800" height="400"></canvas>
+            <script src="canvasScript.js"></script>
+        </div>
+    </body>
+</html>
